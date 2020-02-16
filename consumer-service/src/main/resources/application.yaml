@@ -1,0 +1,12 @@
+server:
+  port: 8802
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: consumer-service
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false

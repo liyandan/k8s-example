@@ -1,0 +1,4 @@
+k8s:
+  service:
+    internal-endpoint:
+      provider-service: http://localhost:8801

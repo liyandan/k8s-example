@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>k8s-example</artifactId>
+        <groupId>com.wangcaitao</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>provider-client</artifactId>
+
+    <dependencies>
+        <!-- region k8s-example project module -->
+        <dependency>
+            <groupId>com.wangcaitao</groupId>
+            <artifactId>starter</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- endregion -->
+        <!-- region others -->
+        <dependency>
+            <groupId>com.wangcaitao</groupId>
+            <artifactId>wangcaitao-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wangcaitao</groupId>
+            <artifactId>wangcaitao-starter-fastjson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wangcaitao</groupId>
+            <artifactId>wangcaitao-global-exception-handler</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-gson</artifactId>
+        </dependency>
+        <!-- endregion -->
+    </dependencies>
+</project>

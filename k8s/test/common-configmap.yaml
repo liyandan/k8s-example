@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: k8s-example
+  name: common-configmap
+data:
+  spring.profiles.active: test
+  server.port: "80"
+  k8s.service.internal-endpoint.provider-service: http://provider-service
